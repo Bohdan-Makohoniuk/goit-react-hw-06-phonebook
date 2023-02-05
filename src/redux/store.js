@@ -16,8 +16,8 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  filter:['contacts'],
-  
+  blacklist: ['filter'],
+
 };
 
 const persistedReducer = persistReducer(persistConfig, contactsReducer);
